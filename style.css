@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right bottom, #187bee, #6dedd8, #c47cef);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: 70px 50px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 14px;
+  box-shadow: 9px 9px 19px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #333;
+  margin-block: 14px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 14px 9px;
+  background: rgba(255, 255, 255, 0.5);
+  color: #333;
+  font-size: 19px;
+  margin-block: 14px;
+}
+
+input::placeholder {
+  color: #333;
+}
+
+.btn_wrapper {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin-block: 14px;
+}
+
+.btn_wrapper button {
+  width: 100%;
+  padding: 7px 16px;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: linear-gradient(to right bottom, #187bee, #6dedd8, #c47cef);
+  font-weight: 700;
+  color: #333;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.btn_wrapper button:hover {
+  background: linear-gradient(to right bottom, #c47cef, #187bee, #6dedd8);
+  color: #fff;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  input {
+    padding-block: 10px;
+    font-size: 17px;
+  }
+
+  .btn_wrapper {
+    flex-direction: column;
+  }
+
+  .content {
+    padding: 40px 30px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    width: 80%;
+  }
+}
